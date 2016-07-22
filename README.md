@@ -18,7 +18,8 @@ docker run -d -p 8787:8787 it4poster/geofracker  /bin/bash
 
 ```
 
-To acces RStudio just open your browser at: http://<docker host IP>:8787
+To acces RStudio just open your browser at: http://$docker_host_IP:8787
+
 eg: http://localhost:8787
 
 The user is: rstudio
