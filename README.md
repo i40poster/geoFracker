@@ -14,7 +14,7 @@ This container is available at DockerHub under the repo **it4poster/geofracker**
 
 ```bash
 
-docker run -d -p 8787:8787 it4poster/geofracker  /bin/bash
+docker run -d -p 8787:8787 it4poster/geofracker 
 
 ```
 
