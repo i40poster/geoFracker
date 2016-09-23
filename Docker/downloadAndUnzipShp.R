@@ -7,7 +7,7 @@
 #' @examples
 #' downloadAndUnzipShp("http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/downloadArquivoOL.aspx?orig=DownloadCamadas&arq=03_Equipamentos%5C%5CAbastecimento%5C%5CShapefile%5C%5Cequipamento_abastecimento&arqTipo=Shapefile")
 
-downloadAndUnzipShp <- function(url) {
+geofracker.downloadAndUnzipShp <- function(url) {
   require(tools)
   workdir <- paste(tempdir(), as.numeric(Sys.time()), sep="/")
   dir.create(workdir, showWarnings = TRUE, recursive = FALSE, mode = "0777")

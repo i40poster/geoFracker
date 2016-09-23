@@ -76,5 +76,5 @@ saopaulo.data.processShapeListsAsList <- function(listOfShape, filter) {
 
 
 saopaulo.data.downloadBatch <- function(shapeslist){
-  return(lapply(shapeslist,downloadAndUnzipShp))
+  return(lapply(shapeslist,geofracker.downloadAndUnzipShp))
 }
