@@ -13,7 +13,8 @@ Reference: https://github.com/CentOS/sig-cloud-instance-images/issues/48
 This container is available at DockerHub under the repo **it4poster/geofracker**:
 
 ```bash
-
+#Download the last image version to your docker host
+docker pull it4poster/geofracker
 docker run -d -p 8787:8787 -p 6311:6311 it4poster/geofracker
 
 ```
