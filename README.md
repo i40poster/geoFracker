@@ -14,7 +14,7 @@ This container is available at DockerHub under the repo **it4poster/geofracker**
 
 ```bash
 
-docker run -d -p 8787:8787 it4poster/geofracker 
+docker run -d -p 8787:8787 -p 6311:6311 it4poster/geofracker
 
 ```
 
@@ -24,3 +24,10 @@ eg: http://localhost:8787
 
 The user is: rstudio
 The password is: rstudio
+
+Access via rserve(eg: Tableu): http://$docker_host_IP:6311
+```R
+# initilize SP tools:
+source('/home/rstudio/setupLibs.R')
+
+```

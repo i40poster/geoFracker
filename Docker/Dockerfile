@@ -6,4 +6,6 @@ RUN sudo apt-get -y update && sudo apt-get install -y libgdal-dev libproj-dev
 
 COPY *.R /home/rstudio/
 
+EXPOSE 6311
+
 RUN Rscript /home/rstudio/setupLibs.R
