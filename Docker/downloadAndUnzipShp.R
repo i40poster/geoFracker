@@ -9,6 +9,7 @@
 
 geofracker.downloadAndUnzipShp <- function(url) {
   require(tools)
+  print(url)
   workdir <- paste(tempdir(), as.numeric(Sys.time()), sep="/")
   dir.create(workdir, showWarnings = TRUE, recursive = FALSE, mode = "0777")
   temp <- tempfile()
