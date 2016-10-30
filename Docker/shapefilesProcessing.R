@@ -40,6 +40,9 @@ saopaulo.data.processShapeListsAsList <- function(listOfShape, filter) {
         tryCatch({
               print(shapeSource)
             dataset <- readOGR(dsn=sourcePath$dir[1], layer=shapeSource)
+            dataset$source_filename <- shapeSource
+            dataset@data$source_in_file_id<-seq.int(nrow(dataset@data))
+
             print(paste(shapeSource,"posdata set -->", i))
             if(!is.null(dataset)) {
               print(shapeSource)

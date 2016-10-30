@@ -12,6 +12,10 @@ Reference: https://github.com/CentOS/sig-cloud-instance-images/issues/48
 
 This container is available at DockerHub under the repo **it4poster/geofracker**:
 
+For details on using this image check out this post:
+<https://i40poster.github.io/geoFrackerSite/RStudioSetupV2>
+
+
 ```bash
 #Download the last image version to your docker host
 docker pull it4poster/geofracker
